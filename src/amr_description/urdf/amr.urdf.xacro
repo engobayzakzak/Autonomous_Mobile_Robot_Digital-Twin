@@ -1,0 +1,6 @@
+<?xml version="1.0"?>
+<robot xmlns:xacro="http://www.ros.org/wiki/xacro" name="amr">
+  <xacro:include filename="amr_core.xacro"/>
+  <xacro:include filename="amr_sensors.xacro"/>
+  <xacro:include filename="amr_gazebo.xacro"/>
+</robot>
