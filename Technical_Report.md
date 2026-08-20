@@ -25,12 +25,19 @@ where $(x, y)$ represents Cartesian position coordinates in the global map frame
                          │     │   │
                          │     └───┘
                          │       \ Right Wheel (-w/2)
+```
 
 
 The non-holonomic constraints prevent lateral movement (zero side-slip along the wheel axle axis):
 $$\dot{x} \sin\theta - \dot{y} \cos\theta = 0$$
 The forward differential kinematics equation mapping left and right wheel angular velocities $(\omega_L, \omega_R)$ to robot linear velocity $v$ and angular velocity $\omega$ is given by:
-$$\begin{bmatrix} v \\ \omega \end{bmatrix} = \begin{bmatrix} \frac{r}{2} & \frac{r}{2} \\ \frac{r}{W} & -\frac{r}{W} \end{bmatrix} \begin{bmatrix} \omega_R \\ \omega_L \end{bmatrix}$$
+```text
+┌───┐   ┌                  ┐ ┌────┐
+│ v │   │  r/2        r/2  │ │ ωR │
+│   │ = │                  │ │    │
+│ ω │   │  r/W       -r/W  │ │ ωL │
+└───┘   └                  ┘ └────┘
+```
 where $r = 0.05\text{ m}$ is the wheel radius and $W = 0.35\text{ m}$ is the track width (wheel separation).
 
 
