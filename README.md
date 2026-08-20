@@ -25,9 +25,9 @@ The system provides a 100% Software-in-the-Loop (SIL) simulation environment for
  │    RViz2 GUI     │ ◄─────────────────────────────────────────────────────┘
  │ (3D Visualizer)  │                     /map, /plan, /visualization_marker
  └──────────────────┘
+ ```
  
- 
- Key System Features
+ ## Key System Features
 
 - URDF Kinematic & Dynamic Model: Fully parameterized differential-drive AMR with exact rigid-body inertial matrices, wheel friction properties ($\mu_1, \mu_2$), 2D planar LiDAR sensor, and RGB visual camera.
 - Bidirectional Middleware Bridge: Custom ros_gz_bridge routing odometry, command velocities (/cmd_vel), laser scans (/scan), camera streams, transform trees (/tf), and simulation clock synchronization (/clock).
@@ -37,24 +37,20 @@ The system provides a 100% Software-in-the-Loop (SIL) simulation environment for
 - Quantitative Performance Benchmarking: Dedicated evaluation node measuring real-time position error ($e_{xy}$) and heading deviation ($e_{\theta}$) upon goal arrival.
 
 
-Quantitative System Benchmarks
+## Quantitative System Benchmarks
 
-\begin{table}[]
-\begin{tabular}{|c|c|c|c|}
-\hline
-\textbf{Metric}                          & \textbf{Design Target} & \textbf{Benchmark Result} & \textbf{Status} \\ \hline
-\textbf{LiDAR Telemetry Rate}            & 10.0 Hz                & 4.36 Hz                   & PASS            \\ \hline
-\textbf{Odometry Telemetry Rate}         & 30.0 Hz                & 23.17 Hz                  & PASS            \\ \hline
-\textbf{Camera Vision Pipeline}          & 30.0 FPS               & 28.50 FPS                 & PASS            \\ \hline
-\textbf{Goal Position Error ($e_{xy}$)}  & \textless 15.0 cm      & 10.08 cm                  & PASS            \\ \hline
-\textbf{Heading Precision($e_{\theta}$)} & $< 10.0^\circ$         & $< 2.10^\circ$            & PASS            \\ \hline
-\textbf{Real-Time Factor (RTF)}          & $\ge 0.80$             & $\ge 0.85$                & PASS            \\ \hline
-\end{tabular}
-\end{table}
+| Metric | Design Target | Benchmark Result | Status |
+| :--- | :---: | :---: | :---: |
+| **LiDAR Telemetry Rate** | 10.0 Hz | 4.36 Hz | **PASS** |
+| **Odometry Telemetry Rate** | 30.0 Hz | 23.17 Hz | **PASS** |
+| **Camera Vision Pipeline** | 30.0 FPS | 28.50 FPS | **PASS** |
+| **Goal Position Error ($e_{xy}$)** | < 15.0 cm | 10.08 cm | **PASS** |
+| **Heading Precision ($e_{\theta}$)** | < 10.0° | < 2.10° | **PASS** |
+| **Real-Time Factor (RTF)** | ≥ 0.80 | ≥ 0.85 | **PASS** |
 
 
 
-Quick Start & Execution Guide
+## Quick Start & Execution Guide
 
 
 1. Workspace Build
