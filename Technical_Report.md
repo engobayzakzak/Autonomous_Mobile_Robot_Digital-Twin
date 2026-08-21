@@ -100,4 +100,4 @@ Map Saver Timeout            & Topic QoS policy mismatch (Transient Local vs Vol
 
 
 7. Conclusion
-This Software-in-the-Loop Autonomous Mobile Robot Digital Twin provides verified proof of competency across non-linear dynamics, distributed ROS 2 architectures, probabilistic localization, costmap path planning, and computer vision. The complete codebase and configuration suite represent a production-ready robotics asset suitable for Master of Science admissions and industrial R&D review.
+This Software-in-the-Loop Autonomous Mobile Robot Digital Twin provides verified proof of competency across non-linear dynamics, distributed ROS 2 architectures, probabilistic localization, costmap path planning, and computer vision.
